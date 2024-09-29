@@ -1,5 +1,8 @@
 package d4operator_casting_scanner;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Scanner03 {
     public static void main(String[] args) {
 

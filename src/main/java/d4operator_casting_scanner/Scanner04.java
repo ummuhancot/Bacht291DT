@@ -1,5 +1,7 @@
 package d4operator_casting_scanner;
 
+import java.util.Scanner;
+
 public class Scanner04 {
     public static void main(String[] args) {
 

@@ -32,16 +32,15 @@ public class StringManipulations02 {
 
         //--------------------------
         //Ornek 1: s String’indeki tum rakamlari(0, 1, 2, 3, 4, 5, 6, 7, 8, 9) "*" a ceviriniz.
-        //Example 1: Convert all digits (0, 1, 2, 3, 4, 4, 5, 6, 7, 8, 9) in String s to "*"
+
 
         String s = "Learn Java earn 1234 money";
 
-        String s3 = s.replaceAll("[0-9]", "*");
+        String s3 = s.replaceAll("[0-9]", "*");//neyi değiştiricemizi neye dönüstürüceğimizi yazıyoruz.
         System.out.println(s3); //Learn Java earn **** money
 
         //--------------------------
         //Ornek 2: "s" String'indeki rakam sayisini bulunuz.
-        //Example 2: Find the number of digits in String "s"
 
         int num = s.replaceAll("[^0-9]", "").length();
         System.out.println(num); //4

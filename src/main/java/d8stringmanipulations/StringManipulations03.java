@@ -53,8 +53,11 @@ public class StringManipulations03 {
         }
 
         //ODEV: En az 1 tane sembol icermeli
+        boolean sembolControl = pwd.replaceAll("[^\\p{Punct}]", "").length()>0;
+        //System.out.println("Sifre en az bir sembol icermelidir");
 
-        boolean isValid = lengthControl && spaceControl && upperCaseControl && lowerCaseControl && digitControl;
+
+        boolean isValid = lengthControl && spaceControl && upperCaseControl && lowerCaseControl && digitControl && sembolControl;
 
         if (isValid) {
             System.out.println("Sifre gecerlidir");

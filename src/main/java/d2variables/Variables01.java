@@ -82,7 +82,8 @@ public class Variables01 {
 
         int a = 12, b = 13;
         System.out.println("Toplam sonuc = " + (a+b));
-
+        System.out.println(a + " " + b);
+        System.out.println(a + "\n" + b);
 
 
     }

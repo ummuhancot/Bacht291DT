@@ -1,4 +1,4 @@
-package d13array;
+package d14multidimensionalarrays_arraylist;
 
 import java.util.ArrayList;
 

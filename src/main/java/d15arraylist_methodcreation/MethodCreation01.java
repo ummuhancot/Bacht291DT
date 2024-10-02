@@ -29,7 +29,7 @@ public class MethodCreation01 {
         */
 
         //method call
-        int result =sum(3, 5);//altta ki main--- //---arguman denir
+        int result =sum(3, 5);//altta ki main--- //---arguman denir--parametre göndermek
         System.out.println(result);//8
         double result1 = sum1(3.33,5.55);//üstteki main
         System.out.println(result1);//
@@ -44,7 +44,7 @@ public class MethodCreation01 {
     //2- sum metodunun tanımında a ve b parametrelerdir.
 
 
-    public static int sum(int a, int b){ //parametre denir buraya
+    public static int sum(int a, int b){ //parametre denir buraya-- parametre almak
         return a + b;
     }
 

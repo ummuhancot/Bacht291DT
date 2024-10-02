@@ -1,6 +1,6 @@
 package d16methodcreation_overloading_varargs_passbyvalue;
 
-public class MethodOverloading01 {
+public class D2_MethodOverloading01 {
     public static void main(String[] args) {
 
         /*
@@ -23,10 +23,10 @@ public class MethodOverloading01 {
 
         add(3,5);//8
 
-        //-------------------- static --- non-static-----
+        //-------------------- static --- non-static-----//soru 2 nin cevabı
         // String s = "Java";
         //s.substring(); // => bu methodu bir String objesi üzerinden çağırırız .Böyle metotlara non-static denir.
-        //Math.min(); //=> bu methodu direkt class adiyla böyle metotlara static denirl
+        //Math.min(); //=> bu methodu direkt class üzerinden cagrılır. böyle metotlara static denir
 
 
 
@@ -61,6 +61,7 @@ public class MethodOverloading01 {
     public static void add(int a, double b){
         System.out.println(a + b);
     }
+
     public static void add(int a, int b,int c){
         System.out.println(a + b + c);
     }
@@ -72,6 +73,7 @@ public class MethodOverloading01 {
     //java lengt paketindeler
 
     //Method ismi + Parametre = Method Signature(metot imzasi)
+    //methot signature, bizim imzamız gibi benzersiz olmalıdır.
 
     //-------------------------
 
@@ -90,7 +92,7 @@ public class MethodOverloading01 {
     /*
     Soru 1: private method'lar overload edilebilir mi?
 
-    Cevap 1: private method'lar overload edilebilirler cunku;
+    Cevap 1: private method'lar overload edilebilirler cunku;(tek kılas içinde yapıldığı için)
     overload islemi tek class icinde yapilir, private methodlar ayni class'in icinden
     ulasilabilir oldugundan overload'a engel degildir.
 

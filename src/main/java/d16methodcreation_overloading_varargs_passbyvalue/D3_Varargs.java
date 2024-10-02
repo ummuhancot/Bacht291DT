@@ -1,6 +1,6 @@
 package d16methodcreation_overloading_varargs_passbyvalue;
 
-public class Varargs {
+public class D3_Varargs {
     public static void main(String[] args) {
 
         //Variable arguments - Değişken sayida argümanlar
@@ -13,10 +13,10 @@ public class Varargs {
 
     }//main disi
 
-  /*  public static int add1(int a, int b){
+  /*  public static int add1(int a, int b){//2 sayı toplicakmış sonra fikri değişti
         return a + b;
     }
-    public static int add1(int a, int b,int c){
+    public static int add1(int a, int b,int c){//3 sayı toplasın dedi sonra 4 dedi
         return a + b + c;
     }
 */
@@ -27,7 +27,7 @@ public class Varargs {
             sum = sum + w;
         }
         return sum;
-    }
+    }                   //istediğim kadar sayıyı toplamış oldum for döngüsüyle(... üç noktaya varags denir)
 
     /* Varargs, bir methodun değişken sayıda argüman almasına izin veren bir özelliktir.
     Varargs, "variable arguments" yani "değişken sayıda argüman"ın kısaltmasıdır.
@@ -41,8 +41,8 @@ public class Varargs {
     4- Varargs parametre, aynı türdeki birden fazla argüman alabilir.
     5- Varargs parametre, sıfır argüman alabilir. main ici add(); olabilir*/
 
-   /* public static int add(int... a){olmaz
-    public static int add(int... a, int b ){olmaz
+   /* public static int add(int... a, int... b){olmaz varags birden fazla kullanılmaz
+    public static int add(int... a, int b ){olmaz sonra varagz kullanılamaz
     public static int add(int b, int... a){olur
     Array kullanır arka planda
     primitiv ve non-primitive olur

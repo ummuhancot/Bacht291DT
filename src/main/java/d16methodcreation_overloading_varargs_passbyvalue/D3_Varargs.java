@@ -41,7 +41,7 @@ public class D3_Varargs {
     4- Varargs parametre, aynı türdeki birden fazla argüman alabilir.
     5- Varargs parametre, sıfır argüman alabilir. main ici add(); olabilir*/
 
-   /* public static int add(int... a, int... b){olmaz varags birden fazla kullanılmaz
+    /*public static int add(int... a, int... b){olmaz varags birden fazla kullanılmaz
     public static int add(int... a, int b ){olmaz sonra varagz kullanılamaz
     public static int add(int b, int... a){olur
     Array kullanır arka planda

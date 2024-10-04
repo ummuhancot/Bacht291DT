@@ -23,7 +23,7 @@ public class DateTime01 {
         System.out.println(myDate);//2024-10-02 şuanın tarihi geldi
 
         //---------------------- javada ayları gösterir---------
-        //ornek 2 : getMonthValue(): Tarihin ayını (1-12 arasında) alır.
+        //ornek 2 : getMonthValue(): Tarihin ayını (1-12 arasında) alır.//value deger demek
         //getMonth(): Bu metod ayı dondurur. (Month enum türünde)
 
         //Java'da Month veri türü, bir enum (enumeration) türüdür (numaralandırma türüdür).
@@ -52,7 +52,8 @@ public class DateTime01 {
         //plusYears(): Belirtilen yil sayısını tarihe ekler ve yeni bir LocalDate döndürür.
         //Bu methodlar, orijinalleri değiştirmez, yeni bir gun, ay ve tarih nesnesi oluşturur.
 
-        LocalDate newDate = myDate.plusYears(1).plusMonths(2).plusDays(4);//yıl ay gün sıralı yazılmalı
+        LocalDate newDate = myDate.plusYears(1).plusMonths(2).plusDays(4);
+        //yıl ay gün sıralı yazılmalı--plus eklemek demek---
         System.out.println(newDate);//2025-12-06 geleceğe gittik
 
 
@@ -64,7 +65,7 @@ public class DateTime01 {
         Sonuç olarak, çıkarma işleminden sonra elde edilen tarihi döndürürler.*/
 
         System.out.println(myDate.minusYears(1).minusMonths(3).minusDays(3));
-        //2023-06-29 böylece geçmişe döndük bu tarihten
+        //2023-06-29 böylece geçmişe döndük bu tarihten--minus cıkar demek---
 
         //-----------------------
 

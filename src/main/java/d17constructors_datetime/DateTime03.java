@@ -51,12 +51,13 @@ public class DateTime03 {
 
             giveDate = LocalDate.of(year, month, day);//Girilen bilgilerle tarih oluşturduk
 
-            if (giveDate.isBefore(LocalDate.now())){
+            if (giveDate.isBefore(LocalDate.now())){//geçmeş tarihte uyarı vermemi sağlıyor
                 System.out.println("Gecersiz, gecmiş bir tarih giriniz. Tekrar deneyiniz");
             } else {
                 System.out.println("Zamanı girebilirsiniz");
                 break;//Gecerli tarih girildigi icin dongüyü kırdık.
             }
+
 
         }
         //break te buradaki kodlar çalışır

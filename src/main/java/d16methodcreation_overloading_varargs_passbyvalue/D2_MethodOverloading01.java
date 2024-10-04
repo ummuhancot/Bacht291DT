@@ -54,6 +54,7 @@ public class D2_MethodOverloading01 {
         System.out.println(a + b);//data tipi değişince farklı bir değişken olarak belirler ovurlood bu
     }
 
+
     public static void add(double a, int b){
         System.out.println(a + b);
     }

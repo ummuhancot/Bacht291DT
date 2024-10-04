@@ -1,0 +1,111 @@
+Java'da tarih ve saat hesaplamaları yapmak için genellikle `java.time` paketindeki sınıflar kullanılır. Bu paket, Java 8 ile birlikte tanıtılan yeni bir tarih ve saat API'sidir ve çok daha güçlü ve esnek bir yapı sunar. İşte bazı yaygın kullanılan sınıflar ve yöntemler:
+
+### 1. `LocalDate`, `LocalTime` ve `LocalDateTime` Sınıfları
+- `LocalDate`: Sadece tarihi temsil eder (yıl, ay, gün).
+- `LocalTime`: Sadece saati temsil eder (saat, dakika, saniye, nanosaniye).
+- `LocalDateTime`: Hem tarihi hem saati bir arada temsil eder.
+
+#### Örnek Kullanımlar:
+```java
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.LocalDateTime;
+
+public class DateTimeExample {
+    public static void main(String[] args) {
+        // Bugünün tarihi
+        LocalDate today = LocalDate.now();
+        System.out.println("Bugünün Tarihi: " + today);
+
+        // Şu anki saat
+        LocalTime now = LocalTime.now();
+        System.out.println("Şu anki Saat: " + now);
+
+        // Hem tarih hem saat
+        LocalDateTime currentDateTime = LocalDateTime.now();
+        System.out.println("Şu anki Tarih ve Saat: " + currentDateTime);
+    }
+}
+```
+
+### 2. `Period` ve `Duration` ile Zaman Farkı Hesaplama
+- `Period`: İki tarih arasındaki farkı yıl, ay ve gün cinsinden hesaplar.
+- `Duration`: İki zaman arasındaki farkı saat, dakika ve saniye cinsinden hesaplar.
+
+#### Örnek:
+```java
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.Period;
+import java.time.Duration;
+
+public class DifferenceExample {
+    public static void main(String[] args) {
+        // İki tarih arasındaki fark
+        LocalDate startDate = LocalDate.of(2020, 1, 1);
+        LocalDate endDate = LocalDate.of(2023, 10, 1);
+        Period period = Period.between(startDate, endDate);
+        System.out.println("Yıl farkı: " + period.getYears());
+        System.out.println("Ay farkı: " + period.getMonths());
+        System.out.println("Gün farkı: " + period.getDays());
+
+        // İki zaman arasındaki fark
+        LocalTime startTime = LocalTime.of(10, 0);
+        LocalTime endTime = LocalTime.of(12, 30);
+        Duration duration = Duration.between(startTime, endTime);
+        System.out.println("Saat farkı: " + duration.toHours());
+        System.out.println("Dakika farkı: " + duration.toMinutes());
+    }
+}
+```
+
+### 3. Tarih ve Saate Zaman Ekleyip Çıkarma
+`plusDays()`, `minusMonths()` gibi metodlar tarih ve saate ekleme ya da çıkarma yapmanızı sağlar.
+
+#### Örnek:
+```java
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class DateTimeManipulation {
+    public static void main(String[] args) {
+        LocalDate date = LocalDate.now();
+
+        // Bir gün ekleme
+        LocalDate nextDay = date.plusDays(1);
+        System.out.println("Yarının Tarihi: " + nextDay);
+
+        // Bir ay çıkarma
+        LocalDate previousMonth = date.minusMonths(1);
+        System.out.println("Geçen Ayın Tarihi: " + previousMonth);
+
+        LocalTime time = LocalTime.now();
+
+        // Bir saat ekleme
+        LocalTime nextHour = time.plusHours(1);
+        System.out.println("Bir saat sonra: " + nextHour);
+    }
+}
+```
+
+### 4. `DateTimeFormatter` ile Tarih ve Saat Formatlama
+Tarih ve saati belirli bir formatta yazdırmak için `DateTimeFormatter` sınıfını kullanabilirsiniz.
+
+#### Örnek:
+```java
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class DateTimeFormatting {
+    public static void main(String[] args) {
+        LocalDateTime dateTime = LocalDateTime.now();
+
+        // Tarih ve saat formatlama
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+        String formattedDateTime = dateTime.format(formatter);
+        System.out.println("Formatlanmış Tarih ve Saat: " + formattedDateTime);
+    }
+}
+```
+
+Bu yöntemlerle tarih ve saat hesaplamaları yaparak esnek ve kullanışlı uygulamalar geliştirebilirsiniz.

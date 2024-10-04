@@ -17,7 +17,7 @@ public class D4_PassByValuePassByReference {
 
         int y = 5;
 
-        int result = add(3,5);
+        int result = add(x,y);
         System.out.println(result);//8
 
     }//main disi

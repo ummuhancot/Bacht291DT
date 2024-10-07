@@ -52,9 +52,9 @@ public class Sb02 {
 
         //tek apentliler de böyle olur özel durum arttırma ilk arttırımıda aşınca length kac ise o kadar yer ayırmaya başlar
         //iki apentlilerde iki katının iki fazlasını devam ettirir.
-        sb4.append("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
+        sb4.append("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx");
         System.out.println(sb4.length());//44
-        System.out.println(sb4.capacity());//44
+        System.out.println("mliemak ="+sb4.capacity());//44
 
         //seneryo dene başka 10 luk ekle
 

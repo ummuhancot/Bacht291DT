@@ -1,4 +1,4 @@
-package d18datetime_stringbuilder;
+package d19stringbuilder_buffer_accessmodifier_static;
 
 public class Sb03 {
     public static void main(String[] args) {
@@ -6,6 +6,7 @@ public class Sb03 {
         //1-reverse(): StringBuilder Object’inin içeriğini ters çevirir.String class’ta yoktur
         StringBuilder sb1 = new StringBuilder("Java is easy");
         System.out.println(sb1);//Java is easy
+
 
         sb1.reverse();
         System.out.println(sb1);//ysae si avaJ
@@ -65,6 +66,21 @@ public class Sb03 {
 
         StringBuilder sbf = new StringBuilder("Java");
         System.out.println(sbf);//Java
+
+
+         /*1) "StringBuilder" class'da String ureten bir class'tir.
+        StringBuilder, metin verilerini eklemek, çıkarmak, değiştirmek veya döndürmek için çeşitli yöntemler
+        ve işlevler içerir. Bunlar arasında append, delete, insert, replace gibi sık kullanılan yöntemler bulunur.*/
+
+        //immutable degiştirilemez- orjinal değerlerin korunması demek
+        String s = "Java";
+        String t = s + "x";
+        String w = t +"?";
+
+        //mutable değiştirilebilir- orjinal degerin değiştirilembilir olması demek -- metin üzerinde sık sık ekleme, çıkarma veya değişiklik yapmanız
+        String str2 = "abc";
+        String str3 = new String("abc");
+
 
         /*
         1) StringBuffer Java'da String ureten bir diger classtir.

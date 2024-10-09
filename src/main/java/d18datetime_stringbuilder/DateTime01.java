@@ -41,11 +41,9 @@ public class DateTime01 {
 
 
         LocalTime myCurrentTime = LocalTime.now();
-        System.out.println(myCurrentTime);
+        System.out.println(myCurrentTime);//01:30:22.099803600
 
         DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("hh:mm a");//12li saat sistemi am pm gösterilir
-
-
         String formattedTime = dtf1.format(myCurrentTime);//parantez içine ne zamananı giricemizi yazarız mesela şuanki saati yazdık şimdi
         System.out.println(formattedTime); //11:14 ÖÖ
 
@@ -99,7 +97,7 @@ public class DateTime01 {
 
         //Zaman dilimlerinin sayisini görelim
         System.out.println("Toplam zaman dilimi sayısi = " +zoneIds.size());//603 tane
-            */
+        */
 
 
 

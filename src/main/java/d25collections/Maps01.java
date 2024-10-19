@@ -93,9 +93,5 @@ public class Maps01 {
         System.out.println(sum);//20
 
 
-
-
-
-
     }
 }

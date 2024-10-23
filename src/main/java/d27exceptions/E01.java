@@ -32,6 +32,7 @@ public class E01 {
         6- Kod başarılı bir şekilde çalışmadığında bile, kullanıcı deneyiminin sorunsuz olmasını sağlamak için,
         tüm yürütmeleri bir try catch ifadesine sarmak programlama dünyasında en iyi uygulama olarak kabul edilir.
         Ancak, tüm kodları körü körüne try-catch blokları içine almak her zaman en iyi pratik değildir.
+
         Bu, hataları maskeleyebilir ve programın gerçek hataları gizlemesine yol açabilir.
 
         https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html
@@ -53,7 +54,7 @@ public class E01 {
 
     //1 önerilmeyen
     public static void dvision(int a, int b){
-        //System.out.println(a / b);
+        System.out.println(a / b);
         //bu hatayı iflerle düzelticez
         if (b == 0){
             System.out.println("Lütfen 0 girmeyiniz");

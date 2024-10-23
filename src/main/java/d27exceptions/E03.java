@@ -19,7 +19,7 @@ public class E03 {
         } catch (StringIndexOutOfBoundsException e) {
             //serr dedik
             System.err.println("Olmayan index kullanmayınız : " + e.getMessage());//olmayan index kullanmayın-önemli hataları kırmızıyla gösterir
-            e.printStackTrace();//kod yazan hatayı girmek isterse yazar, exce[tion i gösterir ama fırlatmaz]
+            e.printStackTrace();//kod yazan hatayı girmek isterse yazar, exce[tion i gösterir ama fırlatmaz]--hata fırlatılmadan görmek istersek kullanılır---
         }
         System.out.println("App calişıyor");
     }

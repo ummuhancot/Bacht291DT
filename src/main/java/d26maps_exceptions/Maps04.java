@@ -153,7 +153,7 @@ public class Maps04  {
         System.out.println(countryPopulation);
         //{France=null, Germany=83000000, Italy=null, Netherland=18000000, Turkiye=83000000, USA=400000000}
 
-        //---------------------sıra varsa kullanılır--single tekli--
+        //---------------------sıra varsa kullanılır--single tekli--27 gün devamı----
         /*LinkedHashMap, HashMap'e benzer, ancak ekleme sırasına göre sıralanmış bir şekilde verileri tutar.
         Yani, LinkedHashMap verileri eklediğiniz sırayla tutar ve bu sırayı korur.
         Bu nedenle, verileri eklediğiniz sırayla geri almanız gerektiğinde kullanışlı olabilir.
@@ -172,6 +172,7 @@ public class Maps04  {
         lhm.put("Ali", 25);
         lhm.put("Can", 18);
         lhm.put("Mehmet", 30);
+        System.out.println(lhm);
 
         for (Map.Entry<String, Integer> entry : lhm.entrySet()){
             System.out.println(entry.getKey() + " --> " + entry.getValue());
@@ -189,7 +190,7 @@ public class Maps04  {
         capitals.get("USA");
         capitals.put("Italy", "Rome");
         capitals.put("Turkiye", "Ankara");
-
+        System.out.println(capitals.hashCode());
         //yan yana 8 tane olursa Balanced Tree ye geçer hash code 16 bölünür kalar 2 olur ve listede 2 olan yere yazılır
         //bu yazılan lar 8 i geçerse Balanced Tree ye geçer
 

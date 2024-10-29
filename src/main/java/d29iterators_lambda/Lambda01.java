@@ -29,9 +29,9 @@ public class Lambda01 {
 
         List<Integer> nums = new ArrayList<>(Arrays.asList(12, 9, 131, 14, 9, 10, 4, 12, 15));
         //printElements1(nums);//12 9 131 14 9 10 4 12 15
-        //printElements2(nums);//12 9 131 14 9 10 4 12 15
+        printElements2(nums);//12 9 131 14 9 10 4 12 15
         //printEvenElements1(nums);//12 14 10 4 12 --çiftleri yazdırdım--
-        printEvenElements2(nums);//12 14 10 4 12
+        //printEvenElements2(nums);//12 14 10 4 12
 
 
 
@@ -81,6 +81,7 @@ public class Lambda01 {
     //to the console on the same line, with a space between them.(Structured)
 
     public static void printEvenElements1(List<Integer> nums){
+                            //(12, 9, 131, 14, 9, 10, 4, 12, 15)
         for (Integer w : nums){
             if (w % 2 == 0){
                 System.out.print(w + " ");
@@ -111,8 +112,6 @@ public class Lambda01 {
             forEach(t -> System.out.print(t + " "));//12 14 10 4 12
 
     }
-
-
 
 
 

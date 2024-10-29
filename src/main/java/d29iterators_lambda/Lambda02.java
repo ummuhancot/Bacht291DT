@@ -23,7 +23,7 @@ public class Lambda02 {
 
     public static void printSquareOfOddElements(List<Integer> nums){
         nums.stream().filter(t -> t % 2 != 0).map(t -> t * t).forEach(t -> System.out.print(t + " "));
-        //nums.stream().filter(t -> t % 2 != 0).map(t -> (int) Math.pow(t, 2)).forEach(t -> System.out.print(t + " "));//Math.pow la kare alma
+        //nums.stream().filter(t -> t % 2 != 0).map(t -> (int) Math.pow(t, 3)).forEach(t -> System.out.print(t + " "));//Math.pow la kare alma
     }
 
     //javda doğrudan karesini alan method var mı ?

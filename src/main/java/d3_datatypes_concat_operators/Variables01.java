@@ -18,7 +18,7 @@ public class Variables01 {
         System.out.println(numberOfCells); //123456789012
 
         //Ornek 2: Iki tane long variable olusturun ve toplamlarini bir etiketle console'a yazdirin.
-        //Example 2: Create two Long variables and print their sums to the console with a label
+        //Example 2: Create two Long variables primitive and print their sums to the console with a label
 
         long c = 15, d = 20;
         System.out.println("Sum : " + (c + d)); //Sum : 35
@@ -34,7 +34,7 @@ public class Variables01 {
         //float olmasina israr ediyorsaniz sonuna "F" veya "f" koymalisiniz
 
         // Ornek 1: 2 tane float data tipinde variable olusturunuz ve bunlarin toplamini bir etiket ile console'a yazdiriniz.
-        // Example 1: Create 2 float data type variables and write their sum to the console with a label.
+        // Example 1: Create 2 float data type variables primitive and write their sum to the console with a label.
         //1.yol:
 
         float sockPrice1 = 12.99f;

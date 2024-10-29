@@ -5,14 +5,17 @@ public class E11 {
 
         int a = 12;
         //int b = 4;
-        int b = 0;
+        int b = 1;
+        //int b = 0;
         int[] c = {3, 5 , 7, 9};
         bring(c, a, b);
-
+        //---- ben yaptım-----
+        bring2("merhaba");
         // try + finally kullanilabilir.--program durur--hata düzeltilmiyor demek --düzelmiyorsunuz acil bir işi hallediyorsunuz
         //virüs bulaşmıs app durdurmak olur
 
     }
+
 
     public static void bring(int[] c ,int a, int b){
 
@@ -26,6 +29,11 @@ public class E11 {
         }
 
         System.out.println("filally sonrası app calişiyor");
+    }
+
+    //---ben yaptım----
+    public static void bring2(String a){
+        System.out.println(a);
     }
 
 

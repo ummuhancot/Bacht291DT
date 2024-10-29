@@ -35,8 +35,8 @@ public class E10 {
 
         int a = 12;
         //int b = 4;
-        int b = 1;
-        //int b = 0;
+        //int b = 1;
+        int b = 0;
         int[] c = {3, 5 , 7, 9};
         bring(c, a, b);
 

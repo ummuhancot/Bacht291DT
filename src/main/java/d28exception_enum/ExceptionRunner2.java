@@ -3,7 +3,7 @@ package d28exception_enum;
 public class ExceptionRunner2 {
     public static void main(String[] args) {
 
-        numberOfStudents(45);
+        //numberOfStudents(45);
         numberOfStudents(-45);
     } //main disi
 
@@ -14,15 +14,19 @@ public class ExceptionRunner2 {
         } else {
             System.out.println(sayi);
         }
+
     }
+
     //----------------
     /*Java'da final, finally ve finalize() terimleri farklı amaçlarla kullanılan üç farklı kavramı temsil eder.
 
 	final:
     Değişkenler İçin: final keyword'uyle tanımlanan bir variable sadece bir kez değer alabilir.
     Bu, değişkenin değerinin sonradan değiştirilemeyeceği anlamına gelir. Yani, bu değişken sabittir (constant)
+
     Metotlar İçin: final keyword'uyle tanımlanan bir metot, child class'lar tarafından
     override edilemez.
+
     Class'lar İçin: final keyword'uyle tanımlanan bir class, genişletilemez (extends edilemez).
     Yani bu class'in child'i olmaz.
 
@@ -35,7 +39,7 @@ public class ExceptionRunner2 {
     Bu, Object sınıfında tanımlanan bir metottur ve varsayılan olarak hiçbir işlem yapmaz.
     Bir nesne bellekten kaldırılmadan hemen önce Garbage Collector (Çöp Toplayıcı) tarafından
     otomatik olarak çağrılır. Genellikle dış kaynakların serbest bırakılması için kullanılır,
-    ancak modern Java uygulamalarında kullanımı önerilmez.*/
+    ancak modern Java uygulamalarında kullanımı önerilmez.*///otomotik yapılıyor
 
 
 }

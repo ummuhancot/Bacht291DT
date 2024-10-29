@@ -14,8 +14,13 @@ public class Iterators {
         5) Iki tip iterator vardir:
             a) Iterator:
                  Bu sadece eleman silmede kullanilir, eleman eklemek veya elemani degistirmek mumkun degildir
+                 hasNext()
+                 next()
+                 remove()
             b) ListIterator:
                  Bu eleman silebilir, ekleyebilir ve degistirebilir
+                 hasPrevious()
+                 previous()
 
             Not:
             Iterator, sadece soldan saga (ilk elemandan son elemana) calisir
@@ -37,13 +42,15 @@ public class Iterators {
 
         Iterator<String> myItr =myList.iterator();
         //System.out.println(myItr);//java.util.ArrayList$Itr@e9e54c2 doğrudan yazdırılmaz
-        /*
-        while (myItr.hasNext()){//en basa konumlanan pointer dan sonra eleman var mi diye bakar.
+
+        /*while (myItr.hasNext()){//en basa konumlanan pointer dan sonra eleman var mi diye bakar.
             myItr.next();//Pointer i bir sonraki elemanin onune alır ve atladigi elamani verir.
             myItr.remove();//next() in atladigi elamani siler
         }
         System.out.println(myList);//[]
         */
+
+
 
         //------------------
         //specific bir elemani iterator ile nasil silebiliriz? (Tom’u silelim)
@@ -56,6 +63,8 @@ public class Iterators {
             }
         }
         System.out.println(myList);//[Jin, Clara, Fatma, Mustafa]
+
+
 
         //ikinci tom ekle ve ikinci tomu sil ödev
 
@@ -89,7 +98,7 @@ public class Iterators {
         }
         while (listIterator2.hasPrevious()){//has previous solundan bakan methottur
             String el = listIterator2.previous();//previous pointeri sola doğru taşır
-            System.out.println(el + "<--");
+            System.out.print(el + "<--");
         }
                 /*
                 Aliye<--

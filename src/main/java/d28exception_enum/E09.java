@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class E09 {
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
 
         //Not: Bir onceki uygulamamizda method signature icine exception eklemesi yaptik.
         // Bu seferde try-catch kullanalim

@@ -5,7 +5,7 @@ public class Concatenation {
 
 
         //Ornek 1: Bir String ve iki int variable olusturun. String degeri ile Integer'larin toplamini console'a yazdirin.
-        //Example 1: Create a String and two int variables. Print the string value and the sum of the Integers to the console.
+        //Example 1: Create a String and two int variables primitive. Print the string value and the sum of the Integers to the console.
 
         String s = "apple";
         int a = 10;

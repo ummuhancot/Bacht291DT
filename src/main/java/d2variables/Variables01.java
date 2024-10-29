@@ -78,7 +78,7 @@ public class Variables01 {
         System.out.println("Turkiye Nufusu: " + countryPopulation); //Turkiye Nufusu: 84234345
 
         //Ornek 2: Iki tane int variable olusturun ve toplamlarini console’a yazdirin.
-        //Example 2: Create two int variables and print their sums to the console
+        //Example 2: Create two int variables primitive and print their sums to the console
 
         int a = 12, b = 13;
         System.out.println("Toplam sonuc = " + (a+b));

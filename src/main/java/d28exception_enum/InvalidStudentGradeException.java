@@ -1,6 +1,6 @@
 package d28exception_enum;
 
-public class InvalidStudentGradeException extends Exception  {
+public class InvalidStudentGradeException extends Exception  {//chilt yaptımızda Exceptionu compile time exception oldu
             /*
         Kendi istisna (Custom Exception class) class'larinizi oluşturabilirsiniz.
         Bunun için genellikle Exception class'ini ya da daha spesifik bir child sınıfı genişleterek (extends) yeni bir class oluşturursunuz.
@@ -35,7 +35,4 @@ public class InvalidStudentGradeException extends Exception  {
     public InvalidStudentGradeException(String message) {
         super(message);
     }
-
-
-
 }

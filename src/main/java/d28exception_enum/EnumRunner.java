@@ -35,7 +35,7 @@ public class EnumRunner {
         System.out.println("Lutfen plaka kodu giriniz");
         int plaka = input.nextInt();
 
-        Cities [] sehirler = Cities.values();
+        Cities[] sehirler = Cities.values();
         //System.out.println(sehirler); Dogrudan yazdırılmıyor
         System.out.println(Arrays.toString(sehirler));
 

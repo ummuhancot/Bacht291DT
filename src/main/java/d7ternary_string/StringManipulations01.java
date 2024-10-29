@@ -1,6 +1,6 @@
 package d7ternary_string;
 
-public class StringManipulations01 {
+public class  StringManipulations01 {
     public static void main(String[] args) {
 
 

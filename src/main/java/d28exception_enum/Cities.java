@@ -25,9 +25,10 @@ public enum Cities {
 
         //---------------
 
-            /* Expected 0 arguments but found 3 hatası,Cities enum yapısında. Her bir enum değeri için 3 argüman sağladık
+         /*
+        Expected 0 arguments but found 3 hatası,Cities enum yapısında. Her bir enum değeri için 3 argüman sağladık
 
-         (int, String, String). Bu argümanları kabul eden bir yapıcı (constructor) tanımlamanız gerekiyor.
+        (int, String, String). Bu argümanları kabul eden bir yapıcı (constructor) tanımlamanız gerekiyor.
         ama once 3 tane variable olusturalim.
 
         private, bir değişkenin yalnızca class'in içinden erişilebilir olmasını sağlar.

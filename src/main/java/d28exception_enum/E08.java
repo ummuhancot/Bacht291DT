@@ -20,7 +20,7 @@ public class E08 {
         Genellikle metin dosyaları, resimler, ses dosyaları vb. dosya türlerini okumak için kullanılır.
         Not: ASCII tablosundaki "A" ya da herhangi bir başka karakter 1 byte'a eşittir.*/
 
-        //bir class dan bir file dosyasını okuyacağız
+
 
         //------------------
         /*
@@ -44,6 +44,8 @@ public class E08 {
         //read, dosya sonuna ulaşıldığında -1 değerini döndürur.
 
 
+        //bir class dan bir file dosyasını okuyacağız
+
         FileInputStream fis = new FileInputStream("src/main/java/d28exception_enum/file.txt");//bulamazsa throws exceptionu nu fırlatacak demek
         //FileNotFoundException var burda
 
@@ -52,7 +54,7 @@ public class E08 {
         while ((k = fis.read()) != -1){//Unhandled exception
             System.out.print(k);//7497118973210711110897121100105114 --asci kod tablo karşılığı-
         }*/
-        int k = 0;
+       int k = 0;
         while ((k = fis.read()) != -1){
             System.out.print((char) k);//type casting //Java kolaydir
         }
